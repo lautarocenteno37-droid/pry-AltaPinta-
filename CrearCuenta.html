@@ -6,10 +6,27 @@
     <link rel="stylesheet" href="CrearCuenta.css">
 </head>
 <body>
-    <form>
-        <h2>Registrarse</h2>
-        <fieldset>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item ">
+                <a href="index.html" class="nav__link nav--input">Inicio</a>
+            </li>
+            <li class="nav__item">
+                <a href="" class="nav__link nav--input">Remeras</a>
+            </li>
+            <li class="nav__item">
+                <a href="" class="nav__link nav--input">Pantalones</a>
+            </li>
+            <li class="nav__item">
+                <a href="" class="nav__link nav--input">Zapatillas</a>
+            </li>
            
+        </ul>
+    </nav>
+    <form>
+
+        <h2>Crear Cuenta</h2>
+        <fieldset>
                 <div class="form_input">
                     <label> Nombre Completo
                     <input  type="text" placeholder="Lautaro Nahuel Centeno Britos">
@@ -26,14 +43,15 @@
                     ">
                     </label>
                 </div>
-                 <div class="form_input">
+                <div class="form_input">
                     <label>Fecha de Nacimiento
                     <input  type="date" 
                     >
                     </label>
                 </div>
         </fieldset>
-        <button  class="button" type="submit">Registrarse</button>
+        <button  class="button" type="submit">Crear Cuenta</button>
+        <a href="iniciarsesion.html" class="nav__link button--log">Iniciar Sesion</a>
     </form>
 </body>
 </html>

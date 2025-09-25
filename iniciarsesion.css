@@ -5,6 +5,39 @@ body{
     background-color:  #111;
     
 }
+.nav {
+    background-color: #222;
+    box-shadow: 0 0 35px #fff2;
+    font-size: 18px;
+}
+
+
+.nav__list{
+    margin: 0;
+    text-align: center;
+}
+.nav__item{
+    display: inline-block;
+}
+
+.nav--input{
+    margin: 0 20px 0 0;
+}
+.nav__link{
+    color: #eee; 
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    background-color: transparent;
+    
+}
+.nav__link:hover{
+    background-color: #aaa9;
+    color: #000;
+    box-shadow: 0 0 35px #fff2;
+}
+
+
 h2{
     text-align: center;
     margin: 0;
@@ -49,7 +82,7 @@ label{
     line-height: 2;
     
 }
-a{
+.button--Reg{
     background-color: #9993;
     color: #fff;
     border-radius: 4px;
@@ -58,7 +91,7 @@ a{
     font-size: 14px;
     margin-left: 300px;
 }
-a:hover{
+.button--Reg:hover{
     background-color: #666;
     cursor: pointer;
 }
