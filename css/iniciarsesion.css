@@ -6,9 +6,11 @@ body{
     
 }
 .nav {
-    background-color: #222;
+    background-color: #333a;
     box-shadow: 0 0 35px #fff2;
     font-size: 18px;
+    width: 100%;
+    
 }
 
 
@@ -24,17 +26,29 @@ body{
     margin: 0 20px 0 0;
 }
 .nav__link{
-    color: #eee; 
+    color: #ccc; 
     text-decoration: none;
     display: inline-block;
     padding: 10px;
     background-color: transparent;
+    border-radius:  5px; 
+    border-left: 3px solid #aaa9;
+    border-bottom: 3px solid #aaa9;
+    box-shadow: 0 0 1px #fff;
     
 }
 .nav__link:hover{
-    background-color: #aaa9;
-    color: #000;
-    box-shadow: 0 0 35px #fff2;
+    color: #fff;
+    box-shadow: 0 0 25px #fff3;
+}
+.link--button{
+    border: none;
+    border-right: 3px solid #aaa9;
+    border-bottom: 3px solid #aaa9;
+    border-radius: 3px;
+    background-color: transparent;
+    padding: 10px;
+    margin-left: 60px;
 }
 
 
@@ -68,7 +82,7 @@ input{
     padding: 6px 12px;
     border: none;
     border-left: 3px solid #999;
-    box-shadow: 0 0 15px #0004;
+    box-shadow: 0 0 1px #fff;
     background-color: transparent;
     border-radius: 4px;
     color: #ddd;
@@ -82,34 +96,41 @@ label{
     line-height: 2;
     
 }
-.button--Reg{
-    background-color: #9993;
+.btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.button{
+    width: auto;
+    background-color: transparent;
+    border: none;
+    border-right: 3px solid #aaa9;
+    border-bottom: 3px solid #aaa9;
+    box-shadow: 0 0 1px #fff;
+    border-radius: 4px;
+    padding: 6px 12px;
+    color: #ccc;
+    margin: 15px 0 0 20px;
+}
+.button:hover{
+    box-shadow: 0 0 15px #fff7;
     color: #fff;
+    cursor: pointer;
+}
+
+.button--Reg{
     border-radius: 4px;
     text-decoration: none;
     padding: 7px;
     font-size: 14px;
-    margin-left: 300px;
-}
-.button--Reg:hover{
-    background-color: #666;
-    cursor: pointer;
+    margin-right: 20px;
+    white-space: nowrap;
+
 }
 
-.button{
-    width: auto;
-    background-color: #9993;
-    border: none;
-    box-shadow: 0 0 15px #0001;
-    border-radius: 4px;
-    padding: 6px 12px;
-    color: #eee;
-    margin: 15px 0 0 20px;
-}
-.button:hover{
-    background-color: #666;
-    cursor: pointer;
-}
+
+
 fieldset{
     border-radius: 5px;
     border: 1px solid #666;
@@ -119,6 +140,13 @@ fieldset{
 }
 legend{
     padding: 0 6px; 
+}
+.parrafo{
+    display: inline-block;    
+    font-size: 13px;
+    margin-left: 145px;
+    white-space: nowrap;
+    
 }
 
 
