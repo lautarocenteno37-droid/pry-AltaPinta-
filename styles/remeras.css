@@ -5,16 +5,16 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 html, body {
-  margin: 0;
-  padding: 0;
-  background-color: #111;
-  box-sizing: border-box;
-  display: block; 
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    box-sizing: border-box;
+    display: block; 
 }
 header {
     margin: 0;
-  height: auto; 
-  padding:0; 
+    height: auto; 
+    padding:0; 
 }
      /* NAV */
 .nav {
@@ -63,6 +63,7 @@ header {
     padding: 10px;
     margin-left: 60px;
 }
+
     /* CARD */
 .crd{
     display: flex;
@@ -79,21 +80,23 @@ header {
     margin: 10px 20px;
     border-radius: 30px;
     border: 1px solid #fff1;
+    
 }
 .conteiner:hover{
     box-shadow: 0 0 15px 0 #fff4;
+
 }
 .conteiner .imagen{
 position: absolute;
 top: 0;
 left: 0;
-height: 50%;
+height: 65%;
 width: 100%;
-
 }
 .conteiner .imagen img{
     height: 100%;
     width: 100%;
+    object-fit: cover;
     transition: all 0.3s ease;
 }
 .conteiner:hover .imagen img{
@@ -111,7 +114,6 @@ width: 100%;
     background-color: #666;
     width: 100%;
     bottom: 0px;
-    top: 223px;
     padding: 10px 25px;
     box-shadow: -1px -1px 8px 0 #0001;
 }
@@ -119,7 +121,6 @@ width: 100%;
     font-size: 22px;
     font-weight: 500;
     color: #fff;
-    margin-top: 20px;
 }
 .wrapper p{
     font-size: 18px;
@@ -127,13 +128,11 @@ width: 100%;
 }
 .wrapper .precio{
     position: absolute;
-    right: 10px;
-    top: 11px;
+    right: 20px;
+    top: 50px;
     color: #fff;
     font-size: 22px;
     font-weight: 600;
-    margin-top: 30px;
-    margin-right: 10px;
 }
 .wrapper .content {
     margin: 10px 0;
@@ -143,12 +142,12 @@ width: 100%;
     font-weight: 500;
     text-transform: uppercase;
     color: #fff;
-    margin-top: 25px;
+
 }
 .wrapper .content .talle-valor{
     display: flex;
     width: 50%;
-    margin: 3px 0;
+    margin: 5px 0;
     justify-content: space-between;
 }
 .wrapper .content .talle-valor span{
@@ -167,45 +166,15 @@ width: 100%;
     background-color: rgb(31, 30, 30);
     color: #fff;
 }
-.content .color-valor{
-    display: flex;
-    width: 30%;
-    margin:  10px 0;
-    justify-content: space-between;
-}
-.content .color-valor span{
-    height: 18px;
-    width: 18px;
-    background-color: #000;
-    border-radius: 50%;
-    cursor: pointer;
-    position: relative;
-}
 
-.content .color-valor span.white{
-    background-color: #fffe;
-}
-.content .color-valor span.blue{
-    background-color: blue;
-}
-
-.content .color-valor span.activo:after{
-    content: "";
-    position: absolute;
-    height: 26px;
-    width: 26px;
-    top: -4px;
-    left: -4px;
-    border: 2px solid #000;
-    box-sizing: border-box;
-    border-radius: 50%;
-}
 /* BOTONES */
 .btn{
     display: flex;
-    justify-content: space-between; 
-    align-items: center;           
-    margin-top: 20px;
+    justify-content: center;
+    align-items: center;            
+    gap: 10px;           
+    width: 100%;  
+
 }
 button{
     border: 1px solid rgba(36, 32, 32, 0.6);
@@ -217,11 +186,9 @@ button{
     font-size: 15px;
     cursor: pointer;
     margin: 4px;
-    
 }
 button:hover{
     color: #fff;
     box-shadow: 0 0 15px #fff7;
     cursor: pointer;
-    font-weight: 600;
 }

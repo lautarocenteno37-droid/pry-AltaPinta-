@@ -17,17 +17,16 @@ header {
   padding:0; 
 }
      /* NAV */
-
 .nav {
-    display: flex;
-    justify-content: center;
     background-color: #333a;
     box-shadow: 0 0 35px #fff2;
     font-size: 18px;
     width: 100%;
     position: fixed;
-
+    
 }
+
+
 .nav__list{
     margin: 0;
     text-align: center;
@@ -68,50 +67,6 @@ header {
 .crd{
     display: flex;
 }
-/* IMAGENES */
-.conteiner .imagen-remera{
-position: absolute;
-top: 0;
-left: 0;
-height: 60%;
-width: 100%;
-}
-.conteiner .imagen-remera img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    transition: all 0.3s ease;
-}
-.conteiner .imagen-pantalon{
-position: absolute;
-top: 0;
-left: 0;
-height: 50%;
-width: 100%;
-}
-.conteiner .imagen-pantalon img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    transition: all 0.3s ease;
-}
-.conteiner:hover .imagen img{
-    transform: scale(1.2);
-}
-.conteiner .imagen-zapatilla{
-position: absolute;
-top: 0;
-left: 0;
-height: 50%;
-width: 100%;
-
-}
-.conteiner .imagen-zapatilla img{
-    height: 100%;
-    width: 100%;
-    transition: all 0.3s ease;
-}
-/* IMAGENES FIN*/
 .conteiner{
     position: relative;
     height: 450px;
@@ -130,7 +85,22 @@ width: 100%;
     box-shadow: 0 0 15px 0 #fff4;
 
 }
-
+.conteiner .imagen{
+position: absolute;
+top: 0;
+left: 0;
+height: 65%;
+width: 100%;
+}
+.conteiner .imagen img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+.conteiner:hover .imagen img{
+    transform: scale(1.2);
+}
 
 .conteiner .card-content{
     height: 100%;
@@ -146,18 +116,10 @@ width: 100%;
     padding: 10px 25px;
     box-shadow: -1px -1px 8px 0 #0001;
 }
-
-.card-content .wrapper-zapatilla{
-    top: 223px;
-
-}
 .wrapper .titulo{
     font-size: 22px;
     font-weight: 500;
     color: #fff;
-}
-.wrapper .titulo-zapatilla{
-    margin-top: 20px;
 }
 .wrapper p{
     font-size: 18px;
@@ -165,15 +127,11 @@ width: 100%;
 }
 .wrapper .precio{
     position: absolute;
-    right: 10px;
-    top: 11px;
+    right: 20px;
+    top: 50px;
     color: #fff;
     font-size: 22px;
     font-weight: 600;
-}
-.wrapper .precio-zapatilla{
-    margin-top: 30px;
-    margin-right: 10px;
 }
 .wrapper .content {
     margin: 10px 0;
@@ -183,9 +141,7 @@ width: 100%;
     font-weight: 500;
     text-transform: uppercase;
     color: #fff;
-}
-.wrapper .content .nombre-zapatilla{
-    margin-top: 25px;
+
 }
 .wrapper .content .talle-valor{
     display: flex;
@@ -209,48 +165,15 @@ width: 100%;
     background-color: rgb(31, 30, 30);
     color: #fff;
 }
-.content .color-valor{
-    display: flex;
-    width: 30%;
-    margin:  10px 0;
-    justify-content: space-between;
-}
-.content .color-valor span{
-    height: 18px;
-    width: 18px;
-    background-color: #000;
-    border-radius: 50%;
-    cursor: pointer;
-    position: relative;
-}
 
-.content .color-valor span.white{
-    background-color: #fffe;
-}
-.content .color-valor span.blue{
-    background-color: blue;
-}
-
-.content .color-valor span.activo:after{
-    content: "";
-    position: absolute;
-    height: 26px;
-    width: 26px;
-    top: -4px;
-    left: -4px;
-    border: 2px solid #000;
-    box-sizing: border-box;
-    border-radius: 50%;
-}
 /* BOTONES */
 .btn{
     display: flex;
-    justify-content: space-between; 
+    justify-content: center;
     align-items: center;            
+    gap: 10px;           
     width: 100%;  
-}
-.btn-zapatilla{         
-    margin-top: 20px;
+
 }
 button{
     border: 1px solid rgba(36, 32, 32, 0.6);
@@ -267,6 +190,4 @@ button:hover{
     color: #fff;
     box-shadow: 0 0 15px #fff7;
     cursor: pointer;
-    font-weight: 600;
 }
-

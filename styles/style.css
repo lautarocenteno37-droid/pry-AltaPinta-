@@ -17,16 +17,17 @@ header {
   padding:0; 
 }
      /* NAV */
+
 .nav {
+    display: flex;
+    justify-content: center;
     background-color: #333a;
     box-shadow: 0 0 35px #fff2;
     font-size: 18px;
     width: 100%;
     position: fixed;
-    
+
 }
-
-
 .nav__list{
     margin: 0;
     text-align: center;
@@ -63,7 +64,6 @@ header {
     padding: 10px;
     margin-left: 60px;
 }
-
     /* CARD */
 .crd{
     display: flex;
@@ -90,7 +90,7 @@ header {
 position: absolute;
 top: 0;
 left: 0;
-height: 60%;
+height: 65%;
 width: 100%;
 }
 .conteiner .imagen img{
@@ -128,8 +128,8 @@ width: 100%;
 }
 .wrapper .precio{
     position: absolute;
-    right: 10px;
-    top: 11px;
+    right: 20px;
+    top: 50px;
     color: #fff;
     font-size: 22px;
     font-weight: 600;
@@ -166,45 +166,13 @@ width: 100%;
     background-color: rgb(31, 30, 30);
     color: #fff;
 }
-.content .color-valor{
-    display: flex;
-    width: 30%;
-    margin:  10px 0;
-    justify-content: space-between;
-}
-.content .color-valor span{
-    height: 18px;
-    width: 18px;
-    background-color: #000;
-    border-radius: 50%;
-    cursor: pointer;
-    position: relative;
-}
 
-.content .color-valor span.white{
-    background-color: #fffe;
-}
-.content .color-valor span.blue{
-    background-color: blue;
-}
-
-.content .color-valor span.activo:after{
-    content: "";
-    position: absolute;
-    height: 26px;
-    width: 26px;
-    top: -4px;
-    left: -4px;
-    border: 2px solid #000;
-    box-sizing: border-box;
-    border-radius: 50%;
-}
 /* BOTONES */
 .btn{
     display: flex;
-    justify-content: space-between; 
+    justify-content: center;
     align-items: center;            
-    padding: 5px 15px;             
+    gap: 10px;           
     width: 100%;  
 
 }
@@ -225,3 +193,4 @@ button:hover{
     cursor: pointer;
     font-weight: 600;
 }
+
