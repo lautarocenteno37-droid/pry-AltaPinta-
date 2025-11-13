@@ -4,12 +4,17 @@
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-html, body{
-    display: grid;
-    height: 100%;
-    width: 100%;
-    padding: 0;
-    background-color: #111;
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #111;
+  box-sizing: border-box;
+  display: block; 
+}
+header {
+    margin: 0;
+  height: auto; 
+  padding:0; 
 }
      /* NAV */
 

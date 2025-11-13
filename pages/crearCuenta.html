@@ -7,54 +7,40 @@
     <link rel="icon" href="../img/icono.png">
 </head>
 <body>
-    <nav class="nav">
-        <ul class="nav__list">
-            <li class="nav__item ">
-                <a href="../index.html" class="nav__link nav--input">Inicio</a>
-            </li>
-            <li class="nav__item">
-                <a href="./Remeras.html" class="nav__link nav--input">Remeras</a>
-            </li>
-            <li class="nav__item">
-                <a href="./Pantalones.html" class="nav__link nav--input">Pantalones</a>
-            </li>
-            <li class="nav__item">
-                <a href="./Zapatillas.html" class="nav__link nav--input">Zapatillas</a>
-            </li>
-        </ul>
-    </nav>
+    <header>   
+        
+    </header>
     <form>
 
         <h2>Crear Cuenta</h2>
         <fieldset>
                 <div class="form_input">
                     <label> Nombre Completo
-                    <input  type="text" placeholder="Lautaro Nahuel Centeno Britos">
+                    <input  type="text" placeholder="Lautaro Nahuel Centeno Britos" id="txtnombre">
                     </label>
                 </div>
                 <div class="form_input">   
                     <label> Email
-                    <input  type="email" placeholder="example@gmail.com">
+                    <input  type="email" placeholder="example@gmail.com" id="txtemail">
                     </label>
                 </div>
                 <div class="form_input">
                     <label>Contraseña
-                    <input  type="password" placeholder="*********
-                    ">
+                    <input  type="password" placeholder="*********" id="txtpassword">
                     </label>
                 </div>
                 <div class="form_input">
                     <label>Fecha de Nacimiento
-                    <input  type="date" 
-                    >
+                    <input  type="date" placeholder="dd/mm/aaaa" id="txtfecha">
                     </label>
                 </div>
         </fieldset>
         <div class="btn">
-            <button  class="button" type="submit">Crear </button>
+            <button  class="button" type="submit" id="btncrear">Crear </button>
             <p class="parrafo">Ya tienes una cuenta?</p>
             <a href="iniciarsesion.html" class="button button--log">Iniciar Sesion</a>
         </div>
     </form>
+    <script src="../js/NavBarLogins.js"></script>
 </body>
 </html>
