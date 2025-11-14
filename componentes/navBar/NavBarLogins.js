@@ -1,8 +1,8 @@
 const NavElements =[
-    {title:'Inicio', link:'../index.html'},
-    {title:'Remeras', link:'./Remeras.html'},
-    {title:'Pantalones', link:'./Pantalones.html'},
-    {title:'Zapatillas', link:'./Zapatillas.html'},
+    {title:'Inicio', link:'../../pages/home/home.html'},
+    {title:'Remeras', link:'../../pages/Remeras.html'},
+    {title:'Pantalones', link:'../../pages/Pantalones.html'},
+    {title:'Zapatillas', link:'../../pages/Zapatillas.html'},
 ]
 
 const NavBar = ` 

@@ -1,7 +1,7 @@
 const CardRemeras = [
     { 
     id: "1", 
-    imagen: "../img/RemeraOversizeNegra1.png", 
+    imagen: "../../img/RemeraOversizeNegra1.png", 
     titulo: "Remera Oversize Classic", 
     precio: "27.000$", 
     talle: ["XS", "S", "M", "L"],
@@ -9,7 +9,7 @@ const CardRemeras = [
     },
     { 
     id: "2", 
-    imagen: "../img/ChombaCuerdosNegra.jpg", 
+    imagen: "../../img/ChombaCuerdosNegra.jpg", 
     titulo: "Polo 85 Negro Oversize", 
     precio: "70.000$", 
     talle: ["S", "M", "L", "XL"],

@@ -1,1 +1,1 @@
-window.location.href = "./public_pages/home.html"
+window.location.href = "./pages/home/home.html"

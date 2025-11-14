@@ -1,12 +1,12 @@
 const NavElementsPages =[ /* Inicio, Remeras, Pantalones, Zapatillas*/
-    {title:'Inicio', link:'./index.html'},
-    {title:'Remeras', link:'./pages/Remeras.html'},
-    {title:'Pantalones', link:'./pages/Pantalones.html'},
-    {title:'Zapatillas', link:'./pages/Zapatillas.html'},
+    {title:'Inicio', link:'./home.html'},
+    {title:'Remeras', link:'../Remeras.html'},
+    {title:'Pantalones', link:'../Pantalones.html'},
+    {title:'Zapatillas', link:'../Zapatillas.html'},
 ]
 const NavElementsLog =[ /* Iniciar sesion y Registrarse*/ 
-    {title:'iniciar sesion', link:'./pages/iniciarsesion.html'},
-    {title:'Registrarse', link:'./pages/crearCuenta.html'},
+    {title:'iniciar sesion', link:'../login/iniciarsesion.html'},
+    {title:'Registrarse', link:'../signup/crearCuenta.html'},
 ]
 
 const NavBar = ` 

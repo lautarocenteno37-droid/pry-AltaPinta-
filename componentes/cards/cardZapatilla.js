@@ -1,7 +1,7 @@
 const CardZapatillas = [
     { 
     id: "1", 
-    imagen: "../img/blackphantom.jpg", 
+    imagen: "../../img/blackphantom.jpg", 
     titulo: "Black-Phantom", 
     precio: "120.000$", 
     talle: ["XS", "S", "M", "L"],
@@ -9,7 +9,7 @@ const CardZapatillas = [
     },
     { 
     id: "2", 
-    imagen: "../img/Airforce1.jpg", 
+    imagen: "../../img/Airforce1.jpg", 
     titulo: "AirForce 1 Blancas", 
     precio: "60.000$", 
     talle: ["S", "M", "L", "XL"],

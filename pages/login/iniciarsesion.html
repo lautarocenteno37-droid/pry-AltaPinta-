@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Alta Pinta-Iniciar Sesion</title>
-    <link rel="stylesheet" href="../css/iniciarsesion.css">
-    <link rel="icon" href="../img/icono.png">
+    <link rel="stylesheet" href="../../styles/iniciarsesion.css">
+    <link rel="icon" href="../../img/icono.png">
 </head>
 <body>
     <header>   
@@ -15,22 +15,23 @@
         <fieldset>
                 <div class="form_input">   
                     <label> Email
-                    <input  type="email" placeholder="example@gmail.com" id="txtemail">
+                    <input  type="email" placeholder="example@gmail.com" id="txtemail"required>
                     </label>
                 </div>
                 
                 <div class="form_input">
                     <label>Contraseña
-                    <input  type="password" placeholder="*********" id="txtpassword">
+                    <input  type="password" placeholder="*********" id="txtpassword"required>
                     </label>
                 </div>
         </fieldset>
         <div class="btn">
-            <button  class="button" type="submit">Entrar</button>
+            <button  onclick="loguear()" class="button" type="button" id="btn">Entrar</button>
             <p class="parrafo">No tienes una cuenta?</p>
-            <a href="./crearCuenta.html" class="button button--Reg">Crear Cuenta</a>
+            <a href="../signup/crearcuenta.html" class="button button--Reg">Crear Cuenta</a>
         </div>
     </form>
-    <script src="../componentes/navBar/NavBarLogins.js"></script>
+    <script src="../../componentes/navBar/NavBarLogins.js"></script>
+    <script src="./login.js"></script>
 </body>
 </html>

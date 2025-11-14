@@ -1,7 +1,7 @@
 const CardPantalon = [
     { 
     id: "1", 
-    imagen: "../img/BaggyJeanGris.jpg", 
+    imagen: "../../../img/BaggyJeanGris.jpg", 
     titulo: "Pantalon Baggy", 
     precio: "40.000$", 
     talle: ["XS", "S", "M", "L"], 
@@ -9,7 +9,7 @@ const CardPantalon = [
     },
     { 
     id: "2", 
-    imagen: "../img/PantalonCargoVerde.jpg", 
+    imagen: "../../../img/PantalonCargoVerde.jpg", 
     titulo: "Pantalon Cargo Verde", 
     precio: "50.000$", 
     talle: ["S", "M", "L", "XL"],
