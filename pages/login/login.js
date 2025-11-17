@@ -9,5 +9,5 @@ function loguear() {
     }
 
     // Si está todo bien → ir al home
-    window.location.href = "../../private_pages/home/home.html"; 
+    window.location.href = "../../private_pages/home.html"; 
 }
