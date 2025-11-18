@@ -1,1 +1,2 @@
 window.location.href = "./pages/home/home.html"
+

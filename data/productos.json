@@ -3,23 +3,23 @@
         "id": "Zapatilla-1",
         "imagen": "../../img/Airforce1.jpg",
         "titulo": "AirForce 1 Blancas",
-        "precio": "60.000$",
-        "talle": ["S", "M", "L", "XL"],
+        "precio": 60000,
+        "talle": ["39", "40", "41", "42"],
         "marca": "Nike"
     },
     {
         "id": "Zapatilla-2",
         "imagen": "../../img/blackphantom.jpg",
         "titulo": "Black-Phantom",
-        "precio": "120.000$",
-        "talle": ["S", "M", "L", "XL"],
+        "precio": 120000,
+        "talle": ["39", "40", "41", "42"],
         "marca": "Nike x Travis Scott"
     },
     { 
     "id": "Pantalon-1", 
     "imagen": "../../../img/BaggyJeanGris.jpg", 
     "titulo": "Pantalon Baggy", 
-    "precio": "40.000$", 
+    "precio": 40000, 
     "talle": ["XS", "S", "M", "L"], 
     "marca": "Stussy"
     },
@@ -27,7 +27,7 @@
     "id": "Pantalon-2", 
     "imagen": "../../../img/PantalonCargoVerde.jpg", 
     "titulo": "Pantalon Cargo Verde", 
-    "precio": "50.000$", 
+    "precio": 50000, 
     "talle": ["XS", "S", "M", "L"], 
     "marca": "Pampero"
     },
@@ -35,7 +35,7 @@
     "id": "Remera-1", 
     "imagen": "../../img/RemeraOversizeNegra1.png", 
     "titulo": "Remera Oversize Classic", 
-    "precio": "27.000$", 
+    "precio": 27000, 
     "talle" : ["XS", "S", "M", "L"],
     "marca": "Stussy"
     },
@@ -43,7 +43,7 @@
     "id": "Remera-2", 
     "imagen": "../../img/ChombaCuerdosNegra.jpg", 
     "titulo": "Polo 85 Negro Oversize", 
-    "precio": "70.000$", 
+    "precio": 70000, 
     "talle": ["S", "M", "L", "XL"],
     "marca": "Cuerdos" 
     }

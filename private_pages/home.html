@@ -13,6 +13,15 @@
     <section id="home"></section>
 
 
-    <script src="../../componentes/navBar/NavBarLogueado.js"></script>
-    <script src="../../componentes/cards/cardHome.js"></script>
+    <script src="../componentes/navBar/NavBarLogueado.js"></script>
+    <script src="../componentes/cards/cardHome.js"></script>
+
+    <script>
+    const usuario = JSON.parse(sessionStorage.getItem("usuarioLogueado"));
+
+    if (!usuario || usuario.logueado !== true) {
+        window.location.href = "../public_pages/iniciarsesion.html";
+    }
+</script>
+
 </html>
