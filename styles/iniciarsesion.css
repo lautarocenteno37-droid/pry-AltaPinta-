@@ -1,18 +1,64 @@
+:root {
+    --bg: #111;
+    --bg-card: #444;
+    --bg-nav: #222;
+    --bg-nav--item: #fff;
+    --text: #fff;
+    --text-sec: #ccc;
+    --precio-color: #fff;
+    --Shadow-color: #fff3;
+    --Shadow-color--card: #fff5;
+    --bg-button: #222;
+}
+
+/* Tema claro */
+.light {
+    --bg: #f4f4f4;
+    --bg-card: #ffffff;
+    --bg-nav: #e3e3e3;
+    --bg-nav--item: #333;
+    --text: #555;
+    --text-dark: #111;
+    --text-sec: #333;
+    --precio-color: #111;
+    --Shadow-color: #222;
+    --Shadow-color--card: #222;
+    --bg-button: #fffc;
+}
 body{
     margin: 0;
     font-family: sans-serif;
-    color: #ddd;
-    background-color:  #111;
-    
+    color: var(--text);
+    background-color: var(--bg);
 }
-.nav {
-    background-color: #333a;
-    box-shadow: 0 0 35px #fff2;
-    font-size: 18px;
-    width: 100%;
-    
+.boton-flotante {
+    position: fixed;
+    top: 50%;               
+    right: 20px;           
+    transform: translateY(-50%);
+    background: #6b6c6d;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+
+.boton-flotante:hover {
+    transform: translateY(-50%) scale(0.95);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* NAV */
+.nav {
+    background-color: var(--bg-nav);
+    box-shadow: 0 0 35px var(--Shadow-color);
+    font-size: 18px;
+    width: 100%;
+}
 
 .nav__list{
     margin: 0;
@@ -26,97 +72,124 @@ body{
     margin: 0 20px 0 0;
 }
 .nav__link{
-    color: #ccc; 
+    color: var(--text-sec);
     text-decoration: none;
     display: inline-block;
     padding: 10px;
     background-color: transparent;
     border-radius:  5px; 
-    border-left: 3px solid #aaa9;
-    border-bottom: 3px solid #aaa9;
-    box-shadow: 0 0 1px #fff;
-    
+    border-left: 2px solid var(--bg-nav--item);
+    border-bottom: 2px solid var(--bg-nav--item);
+    box-shadow: 0 0 1px var(--Shadow-color);
+    transition: transform 0.15s ease, background-color 0.15s ease;
 }
 .nav__link:hover{
-    color: #fff;
-    box-shadow: 0 0 25px #fff3;
+    color: var(--text-dark);
+    box-shadow: 0 0 25px var(--Shadow-color);
+    border: none;
+    transform: scale(0.94);
 }
 .link--button{
     border: none;
-    border-right: 3px solid #aaa9;
-    border-bottom: 3px solid #aaa9;
+    border-right: 3px solid var(--bg-nav--item);
+    border-bottom: 3px solid var(--bg-nav--item);
     border-radius: 3px;
     background-color: transparent;
     padding: 10px;
     margin-left: 60px;
 }
 
-
+/* TITULO */
 h2{
     text-align: center;
-    margin: 0;
-    margin-bottom: 10px;
+    margin: 0 0 10px 0;
     font-weight: 100;
     font-size: 22px;
     padding: 10px;
-    
-    
+    color: var(--text);
 }
+
+/* FORMULARIO */
 form{
     background-color: transparent;
     padding: 20px 0;
     max-width: 500px;
-    margin: auto;
-    box-shadow: 0 0 35px #fff2;
-    margin-top: 50px;
-    margin-bottom: 40px;
+    margin: 50px auto 40px auto;
+    box-shadow: 0 0 35px var(--Shadow-color);
     border-radius: 8px;
 }
 .form_input{
     padding: 6px 20px;
-    
 }
+
 input{
     width: 100%;
     box-sizing: border-box;
     padding: 6px 12px;
     border: none;
-    border-left: 3px solid #999;
-    box-shadow: 0 0 1px #fff;
-    background-color: transparent;
+    border-left: 3px solid var(--bg-nav--item);
+    box-shadow: 0 0 1px var(--Shadow-color--card);
+    background-color: var(--bg-card);
     border-radius: 4px;
-    color: #ddd;
-    
+    color: var(--text);
+}
+input::placeholder{
+    color: var(--text);
 }
 option{
-    background-color: #222;
+    background-color: var(--bg-nav);
+    color: var(--text);
 }
+
 label{
     font-size: 0.88em;
     line-height: 2;
-    
+    color: var(--text-sec);
 }
+
+fieldset{
+    border-radius: 5px;
+    border: 1px solid var(--bg-nav--item);
+    margin: 0 20px;
+    padding: 5px 5px 18px 0;
+}
+legend{
+    padding: 0 6px;
+    color: var(--text);
+}
+
+.parrafo{
+    display: inline-block;    
+    font-size: 13px;
+    margin-left: 145px;
+    white-space: nowrap;
+    color: var(--text-sec);
+}
+
+/* BOTONES */
 .btn{
     display: flex;
     justify-content: space-between;
     align-items: baseline;
 }
+
 .button{
     width: auto;
     background-color: transparent;
     border: none;
-    border-right: 3px solid #aaa9;
-    border-bottom: 3px solid #aaa9;
-    box-shadow: 0 0 1px #fff;
+    border-right: 3px solid var(--bg-nav--item);
+    border-bottom: 3px solid var(--bg-nav--item);
+    box-shadow: 0 0 1px var(--Shadow-color);
     border-radius: 4px;
     padding: 6px 12px;
-    color: #ccc;
+    color: var(--text-sec);
     margin: 15px 0 0 20px;
 }
 .button:hover{
-    box-shadow: 0 0 15px #fff7;
-    color: #fff;
+    color: var(--text);
+    box-shadow: 0 0 15px var(--Shadow-color--card);
     cursor: pointer;
+    font-weight: 600;
 }
 
 .button--Reg{
@@ -126,27 +199,11 @@ label{
     font-size: 14px;
     margin-right: 20px;
     white-space: nowrap;
-
+    color: var(--text-sec);
 }
-
-
-
-fieldset{
-    border-radius: 5px;
-    border: 1px solid #666;
-    margin: 0 20px;
-    padding: 5px 5px 18px 0;
-    
+.button--Reg:hover{
+    color: var(--text);
+    box-shadow: 0 0 15px var(--Shadow-color--card);
+    cursor: pointer;
+    font-weight: 600;
 }
-legend{
-    padding: 0 6px; 
-}
-.parrafo{
-    display: inline-block;    
-    font-size: 13px;
-    margin-left: 145px;
-    white-space: nowrap;
-    
-}
-
-

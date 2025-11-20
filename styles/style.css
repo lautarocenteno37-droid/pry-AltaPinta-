@@ -1,28 +1,85 @@
+:root {
+    --bg: #111;
+    --bg-card: #fff;
+    --bg-nav: #222;
+    --bg-nav--item: #aaa;
+    --text: #fff;
+    --text-sec: #ccc;
+    --precio-color: #fff;
+    --Shadow-color: #fff3;
+    --Shadow-color--card: #fff5;
+    --bg-button: #222;
+}
+
+/* Tema claro */
+.light {
+    --bg: #f4f4f4;
+    --bg-card: #ffffff;
+    --bg-nav: #e3e3e3;
+    --bg-nav--item: #333;
+    --text: #111;
+    --text-sec: #333;
+    --precio-color: #111;
+    --Shadow-color: #222;
+    --Shadow-color--card: #222;
+    --bg-button: #fffc;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
 }
 html, body {
-  margin: 0;
-  padding: 0;
-  background-color: #111;
-  box-sizing: border-box;
-  display: block; 
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg);
+    box-sizing: border-box;
+    display: block; 
 }
 header {
     margin: 0;
-  height: auto; 
-  padding:0; 
+    height: auto; 
+    padding:0; 
 }
+#Remeras, #pantalones, #Zapatillas, #home {
+    background-color: var(--bg);  
+    padding: 40px 0;
+    min-height: 100vh; 
+}
+.home--text {
+text-align:center; color: var(--text-sec); margin-top:40px; font-size:18px;
+}
+.boton-flotante {
+    position: fixed;
+    top: 50%;               
+    right: 20px;           
+    transform: translateY(-50%);
+    background: #6b6c6d;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+.boton-flotante:hover {
+    transform: translateY(-50%) scale(0.95);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
      /* NAV */
 
 .nav {
     display: flex;
     justify-content: center;
-    background-color: #222;
-    box-shadow: 0 0 35px #fff2;
+    background-color: var(--bg-nav);
+    box-shadow: 0 0 35px var(--Shadow-color);
     font-size: 18px;
     width: 100%;
     position: fixed;
@@ -41,27 +98,27 @@ header {
     margin: 0 20px 0 0;
 }
 .nav__link{
-    color: #ccc; 
+    color: var(--text-sec);
     text-decoration: none;
     display: inline-block;
     padding: 10px;
     background-color: transparent;
     border-radius:  5px; 
-    border-left: 2px solid #aaa;
-    border-bottom: 2px solid #aaa;
-    box-shadow: 0 0 1px #fff;
+    border-left: 2px solid var(--bg-nav--item);
+    border-bottom: 2px solid var(--bg-nav--item);
+    box-shadow: 0 0 1px var(--Shadow-color);
     transition: transform 0.15s ease, background-color 0.15s ease;
 }
 .nav__link:hover{
-    color: #fff;
-    box-shadow: 0 0 25px #fff3;
+    color: var(--text);
+    box-shadow: 0 0 25px var(--Shadow-color);
     border: none;
     transform: scale(0.94);
 }
 .link--button{
     border: none;
-    border-left: 2px solid #aaa;
-    border-bottom: 2px solid #aaa;
+    border-left: 2px solid var(--bg-nav--item);
+    border-bottom: 2px solid var(--bg-nav--item);
     border-radius: 3px;
     background-color: transparent;
     padding: 10px;
@@ -70,7 +127,7 @@ header {
 
 h2 {
     text-align: center;
-    color: white;
+    color: var(--text);
     font-size: 2rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 90px 0 -50px 0;
@@ -89,8 +146,8 @@ h2 {
     position: relative;
     height: 450px;
     width: 300px;
-    background-color: #fff;
-    box-shadow: 0 0 15px 0 #fff5;
+    background-color: var(--bg-card);
+    box-shadow: 0 0 15px 0 var(--Shadow-color--card);
     transition: all 0.3s ease;
     overflow: hidden;
     top: 80px;
@@ -128,7 +185,7 @@ width: 100%;
 
 .card-content .wrapper{
     position: absolute;
-    background-color: #666;
+    background-color: var(--bg-nav);
     width: 100%;
     bottom: 0px;
     padding: 10px 25px;
@@ -137,17 +194,17 @@ width: 100%;
 .wrapper .titulo{
     font-size: 22px;
     font-weight: 500;
-    color: #fff;
+    color: var(--text);
 }
 .wrapper p{
     font-size: 18px;
-    color: #ccc;
+    color: var(--text-sec);
 }
 .wrapper .precio{
     position: absolute;
     right: 20px;
     top: 50px;
-    color: #fff;
+    color: var(--text);
     font-size: 22px;
     font-weight: 600;
 }
@@ -158,7 +215,7 @@ width: 100%;
     font-size: 15px;
     font-weight: 500;
     text-transform: uppercase;
-    color: #fff;
+    color: var(--text);
 
 }
 .wrapper .content .talle-valor{
@@ -172,7 +229,7 @@ width: 100%;
     height: 28px;
     width: 28px;
     text-align: center;
-    color: #fff;
+    color: var(--text);
     border-radius: 50%;
     font-weight: 500;
     font-size: 15px;
@@ -181,7 +238,7 @@ width: 100%;
 }
 .wrapper .content .talle-valor span.activo{
     background-color: rgb(31, 30, 30);
-    color: #fff;
+    color: var(--text);
 }
 
 /* BOTONES */
@@ -194,10 +251,10 @@ width: 100%;
 
 }
 button{
-    border: 1px solid rgba(36, 32, 32, 0.6);
+
     border-radius: 5px;
-    background-color: #333;
-    color: #ccc;
+    background-color: var(--bg-button);
+    color: var(--text-sec);
     padding: 6px 16px;              
     white-space: nowrap;            
     font-size: 15px;
@@ -205,8 +262,8 @@ button{
     margin: 4px;
 }
 button:hover{
-    color: #fff;
-    box-shadow: 0 0 15px #fff7;
+    color: var(--text);
+    box-shadow: 0 0 15px var(--Shadow-color--card);
     cursor: pointer;
     font-weight: 600;
 }
