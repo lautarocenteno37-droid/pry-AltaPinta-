@@ -5,8 +5,8 @@ const NavElements =[ /* Inicio, Remeras, Pantalones, Zapatillas*/
     {title:'Zapatillas', link:'./zapatillas.html'},
 ]
 const NavElementsLog =[ /* Iniciar sesion y Registrarse*/ 
-    {title:'iniciar sesion', link:'../../../pages/login/iniciarsesion.html'},
-    {title:'Registrarse', link:'../../../pages/signup/crearCuenta.html'},
+    {title:'iniciar sesion', link:'./login/iniciarsesion.html'},
+    {title:'Registrarse', link:'./signup/crearCuenta.html'},
 ]
 
 const NavBar = ` 
