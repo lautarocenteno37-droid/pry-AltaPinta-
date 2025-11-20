@@ -1,6 +1,6 @@
 const NavElementsPages =[ /* Inicio, Remeras, Pantalones, Zapatillas*/
     {title:'Inicio', link:'./home.html'},
-    {title:'Remeras', link:'../remeras.html'},
+    {title:'Remeras', link:'../rgemeras.html'},
     {title:'Pantalones', link:'../pantalones.html'},
     {title:'Zapatillas', link:'../zapatillas.html'},
 ]
